@@ -23,7 +23,7 @@ def animate(i):
     btk_pool = line_data['tokens_pool']
     y = btk_pool / sh_pool * 1000
     x = datetime.datetime.now().strftime("%H:%M:%S")
-    data_file.write(x + ',' + str(y) + '\n' )
+    data_file.write(f'{x},{y}\n')
     data_file.close()
 
     data_file = open('prices.csv', 'r').read()
