@@ -1,0 +1,7 @@
+services:
+  mining-service:
+    build: .
+    image: miningntwrkc-price:latest
+    container_name: miningntwrkc-cont
+    volumes:
+      - .:/usr/src/app
